@@ -1,0 +1,10 @@
+[project]
+name = "hellotools"
+dynamic =["version"]
+dependencies=['scipy > 0.12.0']
+
+[project.scripts]
+hellotools_banana = "hellotools.helloworld:hello_world"
+
+[tool.setuptools.dynamic]
+version = {attr = "hellotools.__version__"}

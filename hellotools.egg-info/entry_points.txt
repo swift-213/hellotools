@@ -1,0 +1,2 @@
+[console_scripts]
+hellotools_banana = hellotools.helloworld:hello_world
